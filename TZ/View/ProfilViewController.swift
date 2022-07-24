@@ -37,7 +37,7 @@ class ProfilViewController: UIViewController {
                 let url = URL(string: urlApi!)
                 if let data = try? Data(contentsOf: url!){
                     self.avatarImageView.image = UIImage(data: data)
-                    }else{ //если нет full
+                    }else{ //если нет url full
                         self.avatarImageView.image = UIImage(systemName: "person.fill")
                   }
             }
@@ -54,7 +54,6 @@ class ProfilViewController: UIViewController {
                         make.top.equalToSuperview().inset(150)
                         make.width.equalTo(300)
                         make.height.equalTo(300)
-        
         }
         
         ApiManager.shared.getUsername { username in
@@ -65,7 +64,6 @@ class ProfilViewController: UIViewController {
         nickNameLable.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(avatarImageView.snp.bottom).offset(20)
-                    
     }
 
   }
