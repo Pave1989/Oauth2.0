@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A5AD8A2B54D4CB747486BF9 /* Pods_TZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2558B4C222E5C006CA599AD /* Pods_TZ.framework */; };
 		821B0113287E044800F24029 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821B0112287E044800F24029 /* APIManager.swift */; };
+		82362352288DE69E00601180 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82362351288DE69E00601180 /* Pacifico-Regular.ttf */; };
+		82362354288DE7E900601180 /* abosanova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82362353288DE7E900601180 /* abosanova.ttf */; };
 		8247CB46286F318300B3F8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8247CB45286F318300B3F8DE /* AppDelegate.swift */; };
 		8247CB48286F318300B3F8DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8247CB47286F318300B3F8DE /* SceneDelegate.swift */; };
 		8247CB4A286F318300B3F8DE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8247CB49286F318300B3F8DE /* AuthViewController.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		0DEE3697617075A6D21C9EDE /* Pods-TZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZ.release.xcconfig"; path = "Target Support Files/Pods-TZ/Pods-TZ.release.xcconfig"; sourceTree = "<group>"; };
 		821B0112287E044800F24029 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		82362351288DE69E00601180 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		82362353288DE7E900601180 /* abosanova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = abosanova.ttf; sourceTree = "<group>"; };
 		8247CB42286F318300B3F8DE /* TZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8247CB45286F318300B3F8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8247CB47286F318300B3F8DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				8247CB4E286F318300B3F8DE /* Assets.xcassets */,
 				8247CB50286F318300B3F8DE /* LaunchScreen.storyboard */,
 				8247CB53286F318300B3F8DE /* Info.plist */,
+				82362353288DE7E900601180 /* abosanova.ttf */,
+				82362351288DE69E00601180 /* Pacifico-Regular.ttf */,
 			);
 			path = TZ;
 			sourceTree = "<group>";
@@ -189,8 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8247CB52286F318300B3F8DE /* LaunchScreen.storyboard in Resources */,
+				82362352288DE69E00601180 /* Pacifico-Regular.ttf in Resources */,
 				8247CB4F286F318300B3F8DE /* Assets.xcassets in Resources */,
 				8247CB4D286F318300B3F8DE /* Main.storyboard in Resources */,
+				82362354288DE7E900601180 /* abosanova.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

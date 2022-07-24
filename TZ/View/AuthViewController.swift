@@ -25,6 +25,7 @@ class AuthViewController: UIViewController {
         buttonAvailable.setTitleColor(.white, for: .normal)
         buttonAvailable.layer.cornerRadius = 35
         buttonAvailable.setTitle("Authorization", for: .normal)
+        buttonAvailable.titleLabel?.font = UIFont(name: "abosanova", size: 30)
         view.addSubview(buttonAvailable)
         buttonAvailable.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()

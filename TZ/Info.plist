@@ -4,10 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string></string>
+		<string>abosanova.ttf</string>
+		<string>Pacifico-Regular.ttf</string>
 	</array>
-	<key>Item 0</key>
-	<string>abosanova.ttf</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -28,6 +28,7 @@ class ProfilViewController: UIViewController {
     //работа с ограничениями
     private func initialize(){
         titleLabel.text = "Профиль"
+        titleLabel.font = UIFont(name: "abosanova", size: 30)
         navigationItem.titleView = titleLabel
         
         ApiManager.shared.getAvatar { avatar in
@@ -59,7 +60,7 @@ class ProfilViewController: UIViewController {
         ApiManager.shared.getUsername { username in
             self.nickNameLable.text = "\(username.username)"
         }
-        nickNameLable.font = UIFont.systemFont(ofSize: 40)
+        nickNameLable.font = UIFont(name: "Pacifico-Regular", size: 40)
     view.addSubview(nickNameLable)
         nickNameLable.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
