@@ -21,14 +21,14 @@ class ProfilViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .gray
-      
+        view.backgroundColor = .white
     initialize()
     }
     //работа с ограничениями
     private func initialize(){
         titleLabel.text = "Профиль"
         titleLabel.font = UIFont(name: "abosanova", size: 30)
+        titleLabel.textColor = .blue
         navigationItem.titleView = titleLabel
         
         ApiManager.shared.getAvatar { avatar in
@@ -47,7 +47,7 @@ class ProfilViewController: UIViewController {
         avatarImageView.layer.cornerRadius = 150
         avatarImageView.clipsToBounds = true
         avatarImageView.layer.borderWidth = 5
-        avatarImageView.layer.borderColor = UIColor.black.cgColor
+        avatarImageView.layer.borderColor = UIColor.green.cgColor
 
     view.addSubview(avatarImageView)
         avatarImageView.snp.makeConstraints { make in
@@ -61,6 +61,7 @@ class ProfilViewController: UIViewController {
             self.nickNameLable.text = "\(username.username)"
         }
         nickNameLable.font = UIFont(name: "Pacifico-Regular", size: 40)
+        nickNameLable.textColor = .green
     view.addSubview(nickNameLable)
         nickNameLable.snp.makeConstraints { make in
             make.centerX.equalToSuperview()

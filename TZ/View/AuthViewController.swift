@@ -9,31 +9,38 @@ import UIKit
 import SnapKit
 
 class AuthViewController: UIViewController {
-//кнопка авторизации
-   private let buttonAvailable = UIButton(type: .system)
-
+    //кнопка авторизации
+   private let buttonAuth = UIButton(type: .custom)
+   private var backgroundImageView = UIImageView()
+   private let backgroundImage = UIImage(named: "img")
+   private let buttonImageView = UIImageView()
+   private let buttonImage = UIImage(named: "arbinaButton")
+       
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
      authentication()
         
             }
     //кнопка авторизации
     private func authentication(){
-        view.backgroundColor = .white
-        buttonAvailable.backgroundColor = .blue
-        buttonAvailable.setTitleColor(.white, for: .normal)
-        buttonAvailable.layer.cornerRadius = 35
-        buttonAvailable.setTitle("Authorization", for: .normal)
-        buttonAvailable.titleLabel?.font = UIFont(name: "abosanova", size: 30)
-        view.addSubview(buttonAvailable)
-        buttonAvailable.snp.makeConstraints { maker in
+        backgroundImageView = UIImageView(frame: self.view.bounds)
+        backgroundImageView.image = backgroundImage
+        backgroundImageView.center = view.center
+        view.addSubview(backgroundImageView)
+
+        
+        buttonImageView.image = buttonImage
+        buttonAuth.setImage(buttonImage, for: .normal)
+        view.addSubview(buttonAuth)
+        buttonAuth.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
-            maker.width.equalTo(250)
+            maker.width.equalTo(120)
             maker.bottom.equalToSuperview().inset(350)
-            maker.height.equalTo(70)
+            maker.height.equalTo(120)
         }
-        buttonAvailable.addTarget(self, action: #selector(getToken), for: .touchUpInside)
+        buttonAuth.addTarget(self, action: #selector(getToken), for: .touchUpInside)
     }
    
      @objc private func getToken(){
